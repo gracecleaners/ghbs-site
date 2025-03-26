@@ -1,574 +1,622 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <title>Great Harvest Bankers SACCO</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <head>
+        <meta charset="utf-8">
+        <title>GHBS</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
 
-    <!-- Favicon -->
-    <link href="img/logo.png" rel="icon">
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
-    
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <!-- Libraries Stylesheet -->
+        <link rel="stylesheet" href="lib/animate/animate.min.css"/>
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
-</head>
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<body>
-    <div class="container-xxl bg-white p-0">
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
         <!-- Spinner Start -->
-        <!-- <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
                 <span class="sr-only">Loading...</span>
             </div>
-        </div> -->
+        </div>
         <!-- Spinner End -->
 
-
-        <!-- Navbar Start -->
-        <div class="container-fluid nav-bar bg-transparent">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-0 px-4">
-                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
-                    <div class="icon p-2 me-2">
-                        <img class="img-fluid" src="img/logo.png" alt="Icon" style="width: 30px; height: 30px;">
-                    </div>
-                    <h1 class="m-0 text-primary">GHBS</h1>
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+                <a href="" class="navbar-brand p-0">
+                    <h1 class="text-primary"><img class="img-fluid" src="img/logo.png" alt="Icon" style="width: 40px; height: 40px;">&nbsp;GHBS</h1>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto">
+                    <div class="navbar-nav ms-auto py-0">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                         <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="team.html" class="nav-item nav-link">Governance</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="gov.html" class="nav-item nav-link">Governance</a>
+                        <a href="member.html" class="nav-item nav-link">Membership</a>
                         
-                       
-                                               <a href="member.html" class="nav-item nav-link">Membership</a>
-                                                <a href="contact.html" class="nav-item nav-link">Contact</a>
-           
-
+                        <a href="contact.html" class="nav-item nav-link">Contact Us</a>
                     </div>
-                                           
+                    <!-- <a href="#" class="btn btn-primary rounded-pill py-2 px-4 my-3 my-lg-0 flex-shrink-0">Get Started</a> -->
                 </div>
             </nav>
-        </div>
-        <!-- Navbar End -->
 
-
-        <!-- Header Start -->
-        <div class="container-fluid header bg-white p-0">
-            <div class="row g-0 align-items-center flex-column-reverse flex-md-row">
-                <div class="col-md-6 p-5 mt-lg-5">
-                    <h1 class="display-5 animated fadeIn mb-4">Transform <span class="text-primary">Lives</span> Through Collective Financial Power.</h1>
-                    <p class="animated fadeIn mb-4 pb-2">Your journey to prosperity starts here at <span class="text-primary">Great Harvest Bank SACCO (GHBS)</span></p>
-                    <!-- <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">Join Now</a> -->
-                </div>
-                <div class="col-md-6 animated fadeIn">
-                    <div class="owl-carousel header-carousel">
-                        <div class="owl-carousel-item">
-                            <img class="img-fluid" src="img/1.jpg" alt="">
+            <!-- Carousel Start -->
+            <div class="header-carousel owl-carousel">
+                <div class="header-carousel-item">
+                    <img src="img/1.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row gy-0 gx-5">
+                                <div class="col-lg-0 col-xl-5"></div>
+                                <div class="col-xl-7 animated fadeInLeft">
+                                    <div class="text-sm-center text-md-end">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To Great Harvest Bankers SACCO</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">Transform Lives Through Collective Financial Power.</h1>
+                                        <!-- <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy... 
+                                        </p> -->
+                                        <!-- <div class="d-flex justify-content-center justify-content-md-end flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                                        </div> -->
+                                        <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                                            <h2 class="text-white me-2">Follow Us:</h2>
+                                            <div class="d-flex justify-content-end ms-2">
+                                                <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="owl-carousel-item">
-                            <img class="img-fluid" src="img/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="header-carousel-item">
+                    <img src="img/2.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row g-5">
+                                <div class="col-12 animated fadeInUp">
+                                    <div class="text-center">
+                                        <h4 class="text-primary text-uppercase fw-bold mb-4">Welcome To Great Harvest Bankers SACCO</h4>
+                                        <h1 class="display-4 text-uppercase text-white mb-4">Your journey to prosperity starts here at Great Harvest Bank SACCO (GHBS)</h1>
+                                        <!-- <p class="mb-5 fs-5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy... 
+                                        </p> -->
+                                        <!-- <div class="d-flex justify-content-center flex-shrink-0 mb-4">
+                                            <a class="btn btn-light rounded-pill py-3 px-4 px-md-5 me-2" href="#"><i class="fas fa-play-circle me-2"></i> Watch Video</a>
+                                            <a class="btn btn-primary rounded-pill py-3 px-4 px-md-5 ms-2" href="#">Learn More</a>
+                                        </div> -->
+                                        <div class="d-flex align-items-center justify-content-center">
+                                            <h2 class="text-white me-2">Follow Us:</h2>
+                                            <div class="d-flex justify-content-end ms-2">
+                                                <a class="btn btn-md-square btn-light rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-twitter"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle mx-2" href=""><i class="fab fa-instagram"></i></a>
+                                                <a class="btn btn-md-square btn-light rounded-circle ms-2" href=""><i class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Carousel End -->
+        </div>
+        <!-- Navbar & Hero End -->
+        <!-- Features Start -->
+        <div class="container-fluid feature pb-5">
+            <div class="container pb-5">
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-chart-line fa-4x text-primary"></i>
+                            </div>
+                            <h4>Savings</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-university fa-4x text-primary"></i>
+                            </div>
+                            <h4>Loans</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="feature-item p-4">
+                            <div class="feature-icon p-4 mb-4">
+                                <i class="fas fa-file-alt fa-4x text-primary"></i>
+                            </div>
+                            <h4>Insurance</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Header End -->
-
-
-        <!-- Search Start -->
-        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
-            <div class="container">
-                <div class="row g-2">
-                    <div class="col-md-12">
-                        <div class="row g-2">
-                            <div class="col-md-4">
-                                <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                                    <div class="rounded p-4">
-                                        <h6>Savings</h6>
-                                        <!-- <span>123 Properties</span> -->
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                                    <div class="rounded p-4">
-                                       
-                                        <h6>Loans</h6>
-                                        <!-- <span>123 Properties</span> -->
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="col-md-4">
-                                <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                                    <div class="rounded p-4">
-                                       
-                                        <h6>Insurance</h6>
-                                        <!-- <span>123 Properties</span> -->
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </div>
-        <!-- Search End -->
-
-
-        <!-- Category Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Services Offered</h1>
-                    <p>The following includes a range of services that we offer</p>
+        <!-- Features End -->
+        <!-- Services Start -->
+        <div class="container-fluid service pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Services</h4>
+                    <!-- <h1 class="display-5 mb-4">We Services provided best offer</h1> -->
+                    <p class="mb-0">The following includes a range of services that we offer
+                    </p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-apartment.png" alt="Icon">
-                                </div>
-                                <h6>Consultancy
-                                </h6>
-                                <!-- <span>123 Properties</span> -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/service-1.jpg" class="img-fluid rounded-top w-100" alt="Image">
                             </div>
-                        </a>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Consultancy</a>
+                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                </p>
+                                <!-- <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a> -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-villa.png" alt="Icon">
-                                </div>
-                                <h6>Lobbying and Advocacy</h6>
-                                <!-- <span>123 Properties</span> -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/lob.png" class="img-fluid rounded-top w-100" alt="Image">
                             </div>
-                        </a>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Lobbying and Advocacy</a>
+                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                </p>
+                                <!-- <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a> -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-house.png" alt="Icon">
-                                </div>
-                                <h6>Customer Care </h6>
-                                <!-- <span>123 Properties</span> -->
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="service-item">
+                            <div class="service-img">
+                                <img src="img/cus.jpeg" class="img-fluid rounded-top w-100" alt="Image">
                             </div>
-                        </a>
-                    </div>
-                    <!-- <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-housing.png" alt="Icon">
-                                </div>
-                                <h6>Office</h6>
-                                <span>123 Properties</span>
+                            <div class="rounded-bottom p-4">
+                                <a href="#" class="h4 d-inline-block mb-4">Customer Care</a>
+                                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, sint? Excepturi facilis neque nesciunt similique officiis veritatis,
+                                </p>
+                                <!-- <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a> -->
                             </div>
-                        </a>
-                    </div> -->
+                        </div>
                     </div>
                     
-            </div>
-        </div>
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Products Offered</h1>
-                    <!-- <p>The following includes a range of services that we offer</p> -->
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.1s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                
-                                <h6>Savings Product
-                                </h6>
-                                <ul>
-                                <li><span>Mandatory Savings</span></li>
-                                <li><span>Voluntary Savings</span></li>
-                                <li><span>Compulsory Savings</span></li>
-                                <li><span>Target Savings</span></li>
-                                <li><span>Minors’/Child Savings</span></li>
-                                <li><span>Fixed Deposits savings</span></li>
-                                
-                                </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                               
-                                <h6>Loan Products</h6>
-                                <ul>
-                                    <li><span>Quick /Online Loans</span></li>
-                                    <li><span>Emergency Loans</span></li>
-                                    <li><span>Business Loans</span></li>
-                                    <li><span>Agro – Business Loans
-                                    </span></li>
-                                    <li><span>Home Improvement</span></li>
-                                    <li><span>Education/ School Fees Loans
-                                    </span></li>
-                                    <li><span>Asset Acquisition Loans
-                                    </span></li>
-                                    
-                                    </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-12 wow fadeInUp" data-wow-delay="0.5s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <h6>Insurance Products</h6>
-                                <ul>
-                                    <li><span>Group Life Last Expense
-                                    </span></li>
-                                    <li><span>Group Life Medical Insurance
-                                    </span></li>
-                                    <li><span>Group Life Credit Protection (Loans)
-                                    </span></li>
-                                    
-                                    </ul>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
-                            <div class="rounded p-4">
-                                <div class="icon mb-3">
-                                    <img class="img-fluid" src="img/icon-housing.png" alt="Icon">
-                                </div>
-                                <h6>Office</h6>
-                                <span>123 Properties</span>
-                            </div>
-                        </a>
-                    </div> -->
-                    </div>
-                    
             </div>
         </div>
-        <!-- Category End -->
+        <!-- Services End -->
 
 
-        <!-- About Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
+
+
+        <!-- Offer Start -->
+        <div class="container-fluid offer-section pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Our Offer</h4>
+                    <h1 class="display-5 mb-4">Products we offer</h1>
+                </div>
                 <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="about-img position-relative overflow-hidden p-5 pe-0">
-                            <img class="img-fluid w-100" src="img/3.jpg">
+                    <div class="col-xl-5 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div class="nav nav-pills bg-light rounded p-5">
+                            <a class="accordion-link p-4 active mb-4" data-bs-toggle="pill" href="#collapseOne">
+                                <h5 class="mb-0">Savings Products</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseTwo">
+                                <h5 class="mb-0">Loan Products</h5>
+                            </a>
+                            <a class="accordion-link p-4 mb-4" data-bs-toggle="pill" href="#collapseThree">
+                                <h5 class="mb-0">Insurance Products</h5>
+                            </a>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="mb-4">Benefits of our services</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Savings Withdrawal at any times.
-                        </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Interest on Savings @ 5% (subject to review at the end of each year)
-                        </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Dividends on Share Capital.
-                        </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>Loans ( 3 times a member’s savings)
-
-                        </p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-
-
-        <!-- Property List Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="row g-0 gx-5 align-items-end">
-                    <div class="col-lg-6">
-                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
-                            <h1 class="mb-3">Our Blogs</h1>
-                        </div>
-                    </div>
-                    <!-- <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
-                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
-                            <li class="nav-item me-2">
-                                <a class="btn btn-outline-primary active" data-bs-toggle="pill" href="#tab-1">Featured</a>
-                            </li>
-                            <li class="nav-item me-2">
-                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">For Sell</a>
-                            </li>
-                            <li class="nav-item me-0">
-                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">For Rent</a>
-                            </li>
-                        </ul>
-                    </div> -->
-                </div>
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane fade show p-0 active">
-                        <div class="row g-4">
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/2.jpg" alt=""></a>
-                                        <!-- <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div> -->
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Update</div>
+                    <div class="col-xl-7 wow fadeInRight" data-wow-delay="0.4s">
+                        <div class="tab-content">
+                            <div id="collapseOne" class="tab-pane fade show p-0 active">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-1.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
-                                    <div class="p-4 pb-0">
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Saving Products</h1>
                                         
-                                        <a class="d-block h5 mb-2" href="">The Benefits of Joining a SACCO: Empowering Your Financial Future</a>
-                                        <h6 class="text-primary mt-3">Overview</h6>
-                                        <p>Advantages of joining GHBS</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-like'></i>100 Likes</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-message-rounded-dots' ></i>3 Comments</small>
+                                        <ul>
+                                            <li><span>Mandatory Savings</span></li>
+                                            <li><span>Voluntary Savings</span></li>
+                                            <li><span>Compulsory Savings</span></li>
+                                            <li><span>Target Savings</span></li>
+                                            <li><span>Minors’/Child Savings</span></li>
+                                            <li><span>Fixed Deposits savings</span></li>
+                                            
+                                            </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/2.jpg" alt=""></a>
-                                        <!-- <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div> -->
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Update</div>
+                            <div id="collapseTwo" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-2.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        
-                                        <a class="d-block h5 mb-2" href="">The Benefits of Joining a SACCO: Empowering Your Financial Future</a>
-                                        <h6 class="text-primary mt-3">Overview</h6>
-                                        <p>Advantages of joining GHBS</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-like'></i>100 Likes</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-message-rounded-dots' ></i>3 Comments</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/2.jpg" alt=""></a>
-                                        <!-- <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div> -->
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Update</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        
-                                        <a class="d-block h5 mb-2" href="">The Benefits of Joining a SACCO: Empowering Your Financial Future</a>
-                                        <h6 class="text-primary mt-3">Overview</h6>
-                                        <p>Advantages of joining GHBS</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-like'></i>100 Likes</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-message-rounded-dots' ></i>3 Comments</small>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Loan Products</h1>
+                                        <ul>
+                                            <li><span>Quick /Online Loans</span></li>
+                                            <li><span>Emergency Loans</span></li>
+                                            <li><span>Business Loans</span></li>
+                                            <li><span>Agro – Business Loans
+                                            </span></li>
+                                            <li><span>Home Improvement</span></li>
+                                            <li><span>Education/ School Fees Loans
+                                            </span></li>
+                                            <li><span>Asset Acquisition Loans
+                                            </span></li>
+                                            
+                                            </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/2.jpg" alt=""></a>
-                                        <!-- <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div> -->
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Update</div>
+                            <div id="collapseThree" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-3.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        
-                                        <a class="d-block h5 mb-2" href="">The Benefits of Joining a SACCO: Empowering Your Financial Future</a>
-                                        <h6 class="text-primary mt-3">Overview</h6>
-                                        <p>Advantages of joining GHBS</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-like'></i>100 Likes</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-message-rounded-dots' ></i>3 Comments</small>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/2.jpg" alt=""></a>
-                                        <!-- <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div> -->
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Update</div>
-                                    </div>
-                                    <div class="p-4 pb-0">
-                                        
-                                        <a class="d-block h5 mb-2" href="">The Benefits of Joining a SACCO: Empowering Your Financial Future</a>
-                                        <h6 class="text-primary mt-3">Overview</h6>
-                                        <p>Advantages of joining GHBS</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-like'></i>100 Likes</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-message-rounded-dots' ></i>3 Comments</small>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">Insurance Products</h1>
+                                        <ul>
+                                            <li><span>Group Life Last Expense
+                                            </span></li>
+                                            <li><span>Group Life Medical Insurance
+                                            </span></li>
+                                            <li><span>Group Life Credit Protection (Loans)
+                                            </span></li>
+                                            
+                                            </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                                <div class="property-item rounded overflow-hidden">
-                                    <div class="position-relative overflow-hidden">
-                                        <a href=""><img class="img-fluid" src="img/2.jpg" alt=""></a>
-                                        <!-- <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">For Sell</div> -->
-                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">Update</div>
+                            <div id="collapseFour" class="tab-pane fade show p-0">
+                                <div class="row g-4">
+                                    <div class="col-md-7">
+                                        <img src="img/offer-4.jpg" class="img-fluid w-100 rounded" alt="">
                                     </div>
-                                    <div class="p-4 pb-0">
-                                        
-                                        <a class="d-block h5 mb-2" href="">The Benefits of Joining a SACCO: Empowering Your Financial Future</a>
-                                        <h6 class="text-primary mt-3">Overview</h6>
-                                        <p>Advantages of joining GHBS</p>
-                                    </div>
-                                    <div class="d-flex border-top">
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-like'></i>100 Likes</small>
-                                        <small class="flex-fill text-center border-end py-2"><i class='bx bxs-message-rounded-dots' ></i>3 Comments</small>
+                                    <div class="col-md-5">
+                                        <h1 class="display-5 mb-4">The stock market provides a venue...</h1>
+                                        <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis amet sequi molestiae tenetur eum mollitia, blanditiis, magnam illo magni error dolore unde perspiciatis tempore et totam corrupti dignissimos aut praesentium?
+                                        </p>
+                                        <a class="btn btn-primary rounded-pill py-2 px-4" href="#">Learn More</a>
                                     </div>
                                 </div>
                             </div>
-                           
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Property List End -->
+        <!-- Offer End -->
 
-
+        <div class="container-fluid about py-5">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-xl-7 wow fadeInLeft" data-wow-delay="0.2s">
+                        <div>
+                            <!-- <h4 class="text-primary">About Us</h4> -->
+                            <h1 class="display-5 mb-4">Benefits of our services</h1>
+                            <div class="row g-4">
+                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <div class="d-flex">
+                                        <!-- <div><i class="fas fa-lightbulb fa-3x text-primary"></i></div> -->
+                                        <div class="">
+                                            <h4>Savings Withdrawal at any times.</h4>
+                                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-6 col-xl-6">
+                                    <div class="d-flex">
+                                        <!-- <div><i class="bi bi-bookmark-heart-fill fa-3x text-primary"></i></div> -->
+                                        <div class="">
+                                            <h4>Interest on Savings @ 5% (subject to review at the end of each year)</h4>
+                                            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h4>Interest on Savings @ 5% (subject to review at the end of each year)</h4>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="d-flex">
+                                        <!-- <i class="fas fa-phone-alt fa-2x text-primary me-4"></i> -->
+                                        <div>
+                                            <h4>Interest on Savings @ 5% (subject to review at the end of each year)</h4>
+                                            <!-- <p class="mb-0 fs-5" style="letter-spacing: 1px;">+01234567890</p> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-5 wow fadeInRight" data-wow-delay="0.2s">
+                        <div class="bg-primary rounded position-relative overflow-hidden">
+                            <img src="img/about-2.png" class="img-fluid rounded w-100" alt="">
+                            
+                            <div class="" style="position: absolute; top: -15px; right: -15px;">
+                                <img src="img/about-3.png" class="img-fluid" style="width: 150px; height: 150px; opacity: 0.7;" alt="">
+                            </div>
+                            <div class="" style="position: absolute; top: -20px; left: 10px; transform: rotate(90deg);">
+                                <img src="img/about-4.png" class="img-fluid" style="width: 100px; height: 150px; opacity: 0.9;" alt="">
+                            </div>
+                            <div class="rounded-bottom">
+                                <img src="img/about-5.jpg" class="img-fluid rounded-bottom w-100" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Testimonial Start -->
-        <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <h1 class="mb-3">Our Clients Say!</h1>
+        <div class="container-fluid testimonial pb-5">
+            <div class="container pb-5">
+                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width: 800px;">
+                    <h4 class="text-primary">Testimonial</h4>
+                    <h1 class="display-5 mb-4">Our Clients Reviews</h1>
                 </div>
-                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="testimonial-item bg-light rounded p-3">
-                        <div class="bg-white border rounded p-4">
-                            <p>Joining GHBS has been one of the best decisions for my business. The affordable loan options allowed me to expand my shop and improve my inventory. The support and financial advice from the team have been exceptional. I am now on the path to greater financial stability</p>
-                            <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded" src="img/4.jpg" style="width: 45px; height: 45px;">
-                                <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Client Name</h6>
-                                    <small>Profession</small>
-                                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">Joining GHBS has been one of the best decisions for my business. The affordable loan options allowed me to expand my shop and improve my inventory. The support and financial advice from the team have been exceptional. I am now on the path to greater financial stability
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
-                    </div>
-                    <div class="testimonial-item bg-light rounded p-3">
-                        <div class="bg-white border rounded p-4">
-                            <p>What I love most about GHBS is their transparency and commitment to their members. Every transaction is clear, and they genuinely care about our financial well-being. I've recommended them to my friends and family, and they are equally impressed.</p>
-                            <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded" src="img/4.jpg" style="width: 45px; height: 45px;">
-                                <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Client Name</h6>
-                                    <small>Profession</small>
-                                </div>
-                            </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
                         </div>
                     </div>
-                    <div class="testimonial-item bg-light rounded p-3">
-                        <div class="bg-white border rounded p-4">
-                            <p>As a farmer, accessing affordable credit is often a challenge. GHBS provided me with a loan that helped me buy quality seeds and irrigation equipment. The result? A bumper harvest and increased income for my family. I’m truly grateful</p>
-                            <div class="d-flex align-items-center">
-                                <img class="img-fluid flex-shrink-0 rounded" src="img/4.jpg" style="width: 45px; height: 45px;">
-                                <div class="ps-3">
-                                    <h6 class="fw-bold mb-1">Client Name</h6>
-                                    <small>Profession</small>
-                                </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">As a farmer, accessing affordable credit is often a challenge. GHBS provided me with a loan that helped me buy quality seeds and irrigation equipment. The result? A bumper harvest and increased income for my family. I’m truly grateful
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
                             </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">What I love most about GHBS is their transparency and commitment to their members. Every transaction is clear, and they genuinely care about our financial well-being. I've recommended them to my friends and family, and they are equally impressed.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-quote-left">
+                            <i class="fas fa-quote-left fa-2x"></i>
+                        </div>
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" class="img-fluid" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p class="mb-0">What I love most about GHBS is their transparency and commitment to their members. Every transaction is clear, and they genuinely care about our financial well-being. I've recommended them to my friends and family, and they are equally impressed.
+                            </p>
+                        </div>
+                        <div class="testimonial-title">
+                            <div>
+                                <h4 class="mb-0">Person Name</h4>
+                                <p class="mb-0">Profession</p>
+                            </div>
+                            <div class="d-flex text-primary">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="testimonial-quote-right">
+                            <i class="fas fa-quote-right fa-2x"></i>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Testimonial End -->
-        
 
         <!-- Footer Start -->
-        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="container py-5">
+        <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+            <div class="container py-5 border-start-0 border-end-0" style="border: 1px solid; border-color: rgb(255, 255, 255, 0.08);">
                 <div class="row g-5">
-                    <div class="col-lg-4 col-md-4">
-                        <h5 class="text-white mb-4">Get In Touch</h5>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kampala, UGANDA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+256 764341463</p>
-                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>greatharvestbankerssacco2024@gmail.com</p>
-                        <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <div class="col-md-6 col-lg-6 col-xl-5">
+                        <div class="footer-item">
+                            <a href="index.html" class="p-0">
+                                <h4 class="text-white"></i>GHBS</h4>
+                                <!-- <img src="img/logo.png" alt="Logo"> -->
+                            </a>
+                            <p class="mb-4">Great Harvest Bank SACCO (GHBS) was established in 2016 and got registered on the 26th of October 2021</p>
+                            <div class="d-flex">
+                                <a href="#" class="bg-primary d-flex rounded align-items-center py-2 px-3 me-2">
+                                    <!-- <i class="fas fa-apple-alt text-white"></i> -->
+                                    <div class="ms-3">
+                                        <small></small>
+                                         <h6 style="padding: 20px;"></h6>
+                                    </div>
+                                </a>
+                                <a href="#" class="bg-dark d-flex rounded align-items-center py-2 px-3 ms-2">
+                                    
+                                    <div class="ms-3">
+                                        <!-- <small class="text-white">Get it on</small> -->
+                                        <!-- <h6 class="text-white">Google Play</h6> -->
+                                         <small></small>
+                                         <h6 style="padding: 20px;"></h6>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
-<div class="col-lg-4 col-md-4">
-                        <h5 class="text-white mb-4">Quick Links</h5>
-                        <a class="btn btn-link text-white-50" href="index.html">Home</a>
-                        <a class="btn btn-link text-white-50" href="about.html">About</a>
-                        <a class="btn btn-link text-white-50" href="member.html">Membership</a>
-                        <a class="btn btn-link text-white-50" href="contact.html">Contact</a>
-                        
-                    </div>
-                   
-                    <div class="col-lg-4 col-md-4">
-                        <h5 class="text-white mb-4">Newsletter</h5>
-                        <p>Subscribe to our Newsletter</p>
-                        <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Quick Links</h4>
+                            <a href="about.html"><i class="fas fa-angle-right me-2"></i> About Us</a>
+                            <a href="gov.html"><i class="fas fa-angle-right me-2"></i> Governance</a>
+                            <a href="member.html"><i class="fas fa-angle-right me-2"></i> Membership</a>
+                            <a href="contact.html"><i class="fas fa-angle-right me-2"></i> Contact</a>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="copyright">
-                    <div class="row">
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">GHBS</a>, All Right Reserved. 
-							
-							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://github.com/gracecleaners">oscarlincoln</a>
+                    
+                    <div class="col-md-6 col-lg-6 col-xl-3">
+                        <div class="footer-item">
+                            <h4 class="text-white mb-4">Contact Info</h4>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-map-marker-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">Kampala, UGANDA</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-envelope text-primary me-3"></i>
+                                <p class="text-white mb-0">greatharvestbankerssacco2024@gmail.com
+                                </p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <i class="fa fa-phone-alt text-primary me-3"></i>
+                                <p class="text-white mb-0">+256764341</p>
+                            </div>
+                            <div class="d-flex">
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-twitter text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-3" href="#"><i class="fab fa-instagram text-white"></i></a>
+                                <a class="btn btn-primary btn-sm-square rounded-circle me-0" href="#"><i class="fab fa-linkedin-in text-white"></i></a>
+                            </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
         </div>
         <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-body"><a href="#" class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>GHBS</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-body">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom text-white" href="">OscarLincoln</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
+        <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>   
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-</body>
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
 
 </html>
