@@ -1,5 +1,108 @@
+:root {
+    /* Premium Color Palette */
+    --bs-primary: #D4AF37;
+    /* Harvest Gold */
+    --bs-secondary: #1e3c72;
+    /* Deep Trust Blue */
+    --bs-light: #f8f9fa;
+    --bs-dark: #1a1a2e;
+    --bs-white: #ffffff;
+    --bs-gradient-gold: linear-gradient(135deg, #FFD700 0%, #D4AF37 100%);
+    --bs-gradient-blue: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    --bs-glass: rgba(255, 255, 255, 0.1);
+    --bs-glass-border: rgba(255, 255, 255, 0.2);
+    --bs-shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.1);
+    --bs-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
 
-/*** Spinner Start ***/
+body {
+    font-family: 'Inter', sans-serif;
+    color: #444;
+    background-color: #fcfcfc;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Playfair Display', 'Roboto', serif;
+    /* Elegant serif for headings */
+    font-weight: 700;
+    color: var(--bs-dark);
+}
+
+/*** Premium Button Styles ***/
+.btn {
+    font-weight: 600;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 50px;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+
+.btn:hover::after {
+    width: 100%;
+}
+
+.btn-primary {
+    background: var(--bs-gradient-gold);
+    border: none;
+    color: var(--bs-dark);
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+}
+
+.btn-primary:hover {
+    background: var(--bs-gradient-gold);
+    color: #000;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.6);
+}
+
+.btn-light {
+    background: var(--bs-white);
+    color: var(--bs-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.btn-light:hover {
+    background: var(--bs-white);
+    color: var(--bs-secondary);
+    transform: translateY(-3px);
+}
+
+/*** Glassmorphism Utilities ***/
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: var(--bs-shadow-soft);
+}
+
+.gradient-text {
+    background: var(--bs-gradient-blue);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
 /*** Spinner ***/
 #spinner {
     opacity: 0;
@@ -13,6 +116,7 @@
     visibility: visible;
     opacity: 1;
 }
+
 /*** Spinner End ***/
 
 .back-to-top {
@@ -143,7 +247,7 @@
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-item .nav-link:hover,
-.navbar-light .navbar-nav .nav-item .nav-link.active  {
+.navbar-light .navbar-nav .nav-item .nav-link.active {
     color: var(--bs-primary);
 }
 
@@ -232,7 +336,7 @@
         border-bottom: 1px solid rgba(255, 255, 255, .1);
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: var(--bs-light);
@@ -272,6 +376,7 @@
         height: 12px;
     }
 }
+
 /*** Navbar End ***/
 
 /*** Carousel Hero Header Start ***/
@@ -281,7 +386,7 @@
 
 .header-carousel .header-carousel-item,
 .header-carousel .header-carousel-item img {
-        height: 700px;
+    height: 700px;
 }
 
 
@@ -305,6 +410,7 @@
     left: 30px;
     margin-left: 90px;
 }
+
 .header-carousel .owl-nav .owl-next {
     bottom: 30px;
     left: 30px;
@@ -361,16 +467,32 @@
 }
 
 @keyframes image-zoom {
-    0%  {height: 100%; opacity: 0.9;}
+    0% {
+        height: 100%;
+        opacity: 0.9;
+    }
 
-    25% {height: 110%; opacity: 0.50;}
+    25% {
+        height: 110%;
+        opacity: 0.50;
+    }
 
-    50% {height: 115%; opacity: 1;}
+    50% {
+        height: 115%;
+        opacity: 1;
+    }
 
-    75% {height: 110%; opacity: 0.50;}
+    75% {
+        height: 110%;
+        opacity: 0.50;
+    }
 
-    100% {height: 100%; opacity: 0.9;}
+    100% {
+        height: 100%;
+        opacity: 0.9;
+    }
 }
+
 /*** Carousel Hero Header End ***/
 
 
@@ -405,6 +527,7 @@
 .bg-breadcrumb .breadcrumb .breadcrumb-item a {
     color: var(--bs-white);
 }
+
 /*** Single Page Hero Header End ***/
 
 
@@ -434,6 +557,7 @@
 .service .service-item:hover .service-img img {
     transform: scale(1.2);
 }
+
 /*** Service End ***/
 
 
@@ -455,6 +579,7 @@
     border-radius: 10px;
     display: inline-block;
 }
+
 /*** Features End ***/
 
 /*** Offer Start ***/
@@ -478,6 +603,7 @@
 .offer-section .nav a.accordion-link.active h5 {
     color: var(--bs-white);
 }
+
 /*** Offer End ***/
 
 /*** Blog Start ***/
@@ -580,6 +706,7 @@
     background: var(--bs-dark);
     color: var(--bs-primary);
 }
+
 /*** Blog End ***/
 
 
@@ -591,6 +718,7 @@
 .faq-section .accordion .accordion-item .accordion-header .accordion-button.collapsed {
     color: var(--bs-dark);
 }
+
 /*** FAQs End ***/
 
 /*** Team Start ***/
@@ -636,7 +764,7 @@
 }
 
 .team .team-item .team-img {
-    width: 100%; 
+    width: 100%;
     height: 100%;
     border-radius: 100%;
     position: relative;
@@ -698,6 +826,7 @@
     color: var(--bs-primary);
     background: var(--bs-dark);
 }
+
 /*** Team End ***/
 
 /*** Testimonial Start ***/
@@ -725,7 +854,7 @@
 }
 
 .testimonial .testimonial-item .testimonial-img img {
-    width: 100px; 
+    width: 100px;
     height: 100px;
     border-radius: 100px;
     border: 5px solid var(--bs-light);
@@ -743,9 +872,9 @@
     justify-content: space-between;
 }
 
-.testimonial .testimonial-item  .testimonial-quote-left {
+.testimonial .testimonial-item .testimonial-quote-left {
     position: absolute;
-    width: 60px; 
+    width: 60px;
     height: 60px;
     top: 20px;
     left: 25px;
@@ -757,9 +886,9 @@
     justify-content: center;
 }
 
-.testimonial .testimonial-item  .testimonial-quote-right {
+.testimonial .testimonial-item .testimonial-quote-right {
     position: absolute;
-    width: 60px; 
+    width: 60px;
     height: 60px;
     bottom: -30px;
     right: 25px;
@@ -901,12 +1030,12 @@
 .footer .footer-item .footer-btn a:hover i {
     color: var(--bs-primary);
 }
+
 /*** Footer End ***/
 
 /*** copyright Start ***/
 .copyright {
     background: var(--bs-dark);
 }
+
 /*** copyright end ***/
-
-
