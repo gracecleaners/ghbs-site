@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>GHBS | Publications</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="description"
+        content="Access GHBS publications — Chairman's Reports, AGM Resolutions, and Audited Financial Statements for member reference.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom_animations.css" rel="stylesheet">
+    <style>
+        .pub-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(25,59,106,0.15);
+            border-radius: var(--radius-lg, 16px);
+            overflow: hidden;
+        }
+        .pub-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+        }
+        .pub-icon {
+            width: 64px;
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(25,59,106,.12), rgba(15,40,71,.06));
+            font-size: 1.8rem;
+        }
+        .pub-doc-item {
+            transition: all 0.3s ease;
+            border-left: 3px solid var(--primary, #193B6A);
+            border-radius: 0 var(--radius-sm, 8px) var(--radius-sm, 8px) 0;
+            background: var(--light, #F8F9FA);
+        }
+        .pub-doc-item:hover {
+            background: rgba(25,59,106,0.06);
+            transform: translateX(5px);
+        }
+        .pub-section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 12px;
+        }
+        .pub-section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--primary, #193B6A);
+            border-radius: 2px;
+        }
+        .text-center .pub-section-title::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .financial-statement-group {
+            border: 1px solid rgba(25,59,106,0.1);
+            border-radius: var(--radius-lg, 16px);
+            background: white;
+            transition: all 0.3s ease;
+        }
+        .financial-statement-group:hover {
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+        .nav-tabs .nav-link {
+            border: none;
+            background: rgba(25,59,106,0.1);
+            color: var(--dark, #0F2847);
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin: 2px;
+        }
+        .nav-tabs .nav-link:hover {
+            background: rgba(25,59,106,0.2);
+            transform: translateY(-1px);
+        }
+        .nav-tabs .nav-link.active {
+            background: var(--primary, #193B6A) !important;
+            color: #fff !important;
+        }
+        #financialTabs {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Spinner -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width:3rem;height:3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Background Shapes -->
+    <div class="bg-shape-wrapper">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+    </div>
+
+    <!-- Navbar -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-brand p-0">
+                <h1 class="text-white"><img class="img-fluid" src="img/logo.png" alt="GHBS Logo"
+                        style="width:40px;height:40px;">&nbsp;GHBS</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse"><span class="fa fa-bars"></span></button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="gov.html" class="nav-item nav-link">Governance</a>
+                    <a href="member.html" class="nav-item nav-link">Membership</a>
+                    <a href="service.html" class="nav-item nav-link">SACCO Products &amp; Service</a>
+                    <a href="publications.html" class="nav-item nav-link active">Publications</a>
+                    <a href="album.html" class="nav-item nav-link">Album</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Header -->
+        <div class="container-fluid bg-breadcrumb">
+            <div class="container text-center py-5" style="max-width:900px;">
+                <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Publications</h4>
+                <ol class="breadcrumb d-flex justify-content-center mb-0 wow fadeInDown" data-wow-delay="0.3s">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active text-primary">Publications</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <!-- Introduction -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width:800px;">
+                <h4 class="text-primary section-heading">Documents &amp; Reports</h4>
+                <h1 class="display-5 mb-4 mt-3">SACCO Publications</h1>
+                <p class="mb-0" style="font-size:1.1rem;">Access important SACCO documents including the Chairman's Report, AGM Resolutions, and Audited Financial Statements. These documents provide transparency and keep members informed about the SACCO's performance and strategic direction.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chairman's Report Section -->
+    <div class="container-fluid py-5 section-alt">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeInLeft" data-wow-delay="0.2s">
+                    <div class="pub-card glass-card p-5 text-center">
+                        <div class="pub-icon mx-auto mb-4">
+                            <i class="fas fa-file-alt text-primary"></i>
+                        </div>
+                        <h3 class="mb-2">Chairman's Report</h3>
+                        <p class="text-muted mb-0">2025 Annual Report</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 wow fadeInRight" data-wow-delay="0.4s">
+                    <h2 class="pub-section-title display-6 mb-4">Chairman's Report 2025</h2>
+                    <p class="mb-4" style="font-size:1.05rem;">The Chairman's Report for the year 2025 highlights the SACCO's performance, achievements, and strategic direction. Below is a summary of the key highlights:</p>
+                    
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-trophy text-primary me-3 mt-1 fa-lg"></i>
+                                <div>
+                                    <h6 class="mb-1">Performance &amp; Achievements</h6>
+                                    <p class="text-muted small mb-0">Strong growth in membership base, savings portfolio, and loan disbursements recorded during the year.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-chart-line text-primary me-3 mt-1 fa-lg"></i>
+                                <div>
+                                    <h6 class="mb-1">Key Activities</h6>
+                                    <p class="text-muted small mb-0">Strategic initiatives undertaken to enhance member value and operational efficiency.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-users text-primary me-3 mt-1 fa-lg"></i>
+                                <div>
+                                    <h6 class="mb-1">Growth Metrics</h6>
+                                    <p class="text-muted small mb-0">Significant growth in membership, savings, loans, and investment portfolios.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-rocket text-primary me-3 mt-1 fa-lg"></i>
+                                <div>
+                                    <h6 class="mb-1">Future Plans</h6>
+                                    <p class="text-muted small mb-0">Strategic direction focused on digital transformation, product expansion, and member welfare.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="pub-doc-item p-3 d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-file-pdf text-danger fa-2x me-3"></i>
+                                <div>
+                                    <h6 class="mb-0">Chairman's Report 2025</h6>
+                                    <small class="text-muted">PDF Document</small>
+                                </div>
+                            </div>
+                            <a href="ANNUAL GENERAL MEETING APRIL 2026 - CHAIRMAN REPORT.pdf" target="_blank" class="btn btn-sm btn-primary">
+                                <i class="fas fa-download me-1"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AGM Resolutions Section -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-7 wow fadeInLeft" data-wow-delay="0.2s">
+                    <h2 class="pub-section-title display-6 mb-4">AGM Resolutions 2025</h2>
+                    <p class="mb-4" style="font-size:1.05rem;">The Annual General Meeting (AGM) Resolutions for 2025 provide members with access to approved resolutions, policy changes, and strategic decisions made during the meeting.</p>
+                    
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-check-circle text-primary me-3 mt-1 fa-lg"></i>
+                                <div>
+                                    <h6 class="mb-1">Approved Resolutions</h6>
+                                    <p class="text-muted small mb-0">All resolutions put forward and approved during the AGM.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-balance-scale text-primary me-3 mt-1 fa-lg"></i>
+                                <div>
+                                    <h6 class="mb-1">Policy Changes</h6>
+                                    <p class="text-muted small mb-0">Updates to SACCO policies as agreed upon by members.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-gavel text-primary me-3 mt-1 fa-lg"></i>
+                                <div>
+                                    <h6 class="mb-1">Key Decisions</h6>
+                                    <p class="text-muted small mb-0">Important decisions made during the Annual General Meeting.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex align-items-start mb-3">
+                                <i class="fas fa-road text-primary me-3 mt-1 fa-lg"></i>
+                                <div>
+                                    <h6 class="mb-1">Strategic Directions</h6>
+                                    <p class="text-muted small mb-0">Strategic directions agreed upon by members for the SACCO's future.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <div class="pub-doc-item p-3 d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <i class="fas fa-file-pdf text-danger fa-2x me-3"></i>
+                                <div>
+                                    <h6 class="mb-0">AGM Resolutions 2025</h6>
+                                    <small class="text-muted">PDF Document</small>
+                                </div>
+                            </div>
+                            <a href="Summary AGM resolutions.pdf" target="_blank" class="btn btn-sm btn-primary">
+                                <i class="fas fa-download me-1"></i> Download
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 wow fadeInRight" data-wow-delay="0.4s">
+                    <div class="pub-card glass-card p-5 text-center">
+                        <div class="pub-icon mx-auto mb-4">
+                            <i class="fas fa-handshake text-primary"></i>
+                        </div>
+                        <h3 class="mb-2">AGM Resolutions</h3>
+                        <p class="text-muted mb-0">2025 Annual General Meeting</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Audited Financial Statements Section -->
+    <div class="container-fluid py-5 section-alt">
+        <div class="container py-5">
+            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.2s" style="max-width:800px;">
+                <h4 class="text-primary section-heading">Financial Reports</h4>
+                <h2 class="display-6 mb-4 mt-3">Audited Financial Statements</h2>
+                <p class="mb-0">Approved financial reports for members' reference, providing full transparency on the SACCO's financial position and performance.</p>
+            </div>
+
+            <!-- Single Document with Tabs -->
+            <div class="row justify-content-center wow fadeInUp" data-wow-delay="0.1s">
+                <div class="col-lg-10">
+                    <div class="financial-statement-group p-5 glass-card">
+                        <!-- Document Header -->
+                        <div class="text-center mb-4">
+                            <div class="pub-icon mx-auto mb-3" style="width:80px;height:80px;font-size:2rem;">
+                                <i class="fas fa-file-invoice text-primary"></i>
+                            </div>
+                            <h3 class="mb-1">Full Audited Financial Statements 2025</h3>
+                            <p class="text-muted mb-3">Complete document containing all financial sections in one PDF</p>
+                            <a href="GHBS Ltd Audited Financial Reports 2025.pdf" target="_blank" class="btn btn-primary btn-lg px-5 py-3">
+                                <i class="fas fa-download me-2"></i> Download Complete Document
+                            </a>
+                            <p class="text-muted small mt-2 mb-0"><i class="fas fa-file-pdf text-danger me-1"></i> PDF &middot; Single file</p>
+                        </div>
+
+                        <!-- Divider -->
+                        <hr class="my-4" style="opacity:0.1;">
+
+                        <!-- Tabs Navigation -->
+                        <ul class="nav nav-tabs justify-content-center border-0" id="financialTabs" role="tablist" style="gap:4px;">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active px-3 px-lg-4 rounded" id="tab-position" data-bs-toggle="tab" data-bs-target="#panel-position" type="button" role="tab" aria-controls="panel-position" aria-selected="true">
+                                    <i class="fas fa-balance-scale me-2"></i>Financial Position
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link px-3 px-lg-4 rounded" id="tab-income" data-bs-toggle="tab" data-bs-target="#panel-income" type="button" role="tab" aria-controls="panel-income" aria-selected="false">
+                                    <i class="fas fa-chart-bar me-2"></i>Comprehensive Income
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link px-3 px-lg-4 rounded" id="tab-cashflow" data-bs-toggle="tab" data-bs-target="#panel-cashflow" type="button" role="tab" aria-controls="panel-cashflow" aria-selected="false">
+                                    <i class="fas fa-exchange-alt me-2"></i>Cash Flow
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link px-3 px-lg-4 rounded" id="tab-auditor" data-bs-toggle="tab" data-bs-target="#panel-auditor" type="button" role="tab" aria-controls="panel-auditor" aria-selected="false">
+                                    <i class="fas fa-clipboard-check me-2"></i>Auditor's Report
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link px-3 px-lg-4 rounded" id="tab-notes" data-bs-toggle="tab" data-bs-target="#panel-notes" type="button" role="tab" aria-controls="panel-notes" aria-selected="false">
+                                    <i class="fas fa-sticky-note me-2"></i>Notes
+                                </button>
+                            </li>
+                        </ul>
+
+                        <!-- Tabs Content -->
+                        <div class="tab-content mt-4" id="financialTabsContent">
+                            <!-- Statement of Financial Position -->
+                            <div class="tab-pane fade show active" id="panel-position" role="tabpanel" aria-labelledby="tab-position">
+                                <div class="p-4 rounded" style="background:var(--light);">
+                                    <div class="d-flex align-items-start">
+                                        <div class="pub-icon me-3" style="width:56px;height:56px;font-size:1.4rem;flex-shrink:0;">
+                                            <i class="fas fa-balance-scale text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-2">Statement of Financial Position</h4>
+                                            <p class="text-muted mb-3">Comprehensive overview of the SACCO's assets, liabilities, and equity as at the end of the financial year. This statement provides a snapshot of the financial health and stability of the SACCO.</p>
+                                            <div class="row g-3">
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-building text-primary me-2"></i>
+                                                        <small><strong>Total Assets</strong><br><span class="text-muted">Including cash, loans, investments &amp; property</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-credit-card text-primary me-2"></i>
+                                                        <small><strong>Total Liabilities</strong><br><span class="text-muted">Member deposits &amp; other payables</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-piggy-bank text-primary me-2"></i>
+                                                        <small><strong>Total Equity</strong><br><span class="text-muted">Retained earnings &amp; reserves</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Statement of Comprehensive Income -->
+                            <div class="tab-pane fade" id="panel-income" role="tabpanel" aria-labelledby="tab-income">
+                                <div class="p-4 rounded" style="background:var(--light);">
+                                    <div class="d-flex align-items-start">
+                                        <div class="pub-icon me-3" style="width:56px;height:56px;font-size:1.4rem;flex-shrink:0;">
+                                            <i class="fas fa-chart-bar text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-2">Statement of Comprehensive Income</h4>
+                                            <p class="text-muted mb-3">Detailed income and expenditure report showing the SACCO's financial performance during the year, including revenue from lending activities, investment income, and operating expenses.</p>
+                                            <div class="row g-3">
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-arrow-up text-success me-2"></i>
+                                                        <small><strong>Revenue</strong><br><span class="text-muted">Interest income &amp; fees</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-arrow-down text-danger me-2"></i>
+                                                        <small><strong>Expenses</strong><br><span class="text-muted">Operating &amp; administrative costs</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-coins text-primary me-2"></i>
+                                                        <small><strong>Net Surplus</strong><br><span class="text-muted">Profit for the year</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Cash Flow Statement -->
+                            <div class="tab-pane fade" id="panel-cashflow" role="tabpanel" aria-labelledby="tab-cashflow">
+                                <div class="p-4 rounded" style="background:var(--light);">
+                                    <div class="d-flex align-items-start">
+                                        <div class="pub-icon me-3" style="width:56px;height:56px;font-size:1.4rem;flex-shrink:0;">
+                                            <i class="fas fa-exchange-alt text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-2">Cash Flow Statement</h4>
+                                            <p class="text-muted mb-3">Analysis of cash inflows and outflows across operating, investing, and financing activities. This statement tracks how the SACCO generates and uses cash to support its operations and growth.</p>
+                                            <div class="row g-3">
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-cogs text-primary me-2"></i>
+                                                        <small><strong>Operating Activities</strong><br><span class="text-muted">Core business cash flows</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-chart-pie text-primary me-2"></i>
+                                                        <small><strong>Investing Activities</strong><br><span class="text-muted">Asset &amp; investment cash flows</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-hand-holding-usd text-primary me-2"></i>
+                                                        <small><strong>Financing Activities</strong><br><span class="text-muted">Member deposits &amp; borrowings</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Auditor's Report -->
+                            <div class="tab-pane fade" id="panel-auditor" role="tabpanel" aria-labelledby="tab-auditor">
+                                <div class="p-4 rounded" style="background:var(--light);">
+                                    <div class="d-flex align-items-start">
+                                        <div class="pub-icon me-3" style="width:56px;height:56px;font-size:1.4rem;flex-shrink:0;">
+                                            <i class="fas fa-clipboard-check text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-2">Auditor's Report</h4>
+                                            <p class="text-muted mb-3">Independent auditor's opinion on the fairness and accuracy of the financial statements. This report confirms that the financial records have been prepared in accordance with applicable accounting standards and present a true and fair view.</p>
+                                            <div class="row g-3">
+                                                <div class="col-sm-6">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-check-circle text-success me-2"></i>
+                                                        <small><strong>Unqualified Opinion</strong><br><span class="text-muted">Financial statements present fairly in all material respects</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-shield-alt text-primary me-2"></i>
+                                                        <small><strong>Compliance</strong><br><span class="text-muted">Compliant with accounting standards &amp; regulatory requirements</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Notes to the Financial Statements -->
+                            <div class="tab-pane fade" id="panel-notes" role="tabpanel" aria-labelledby="tab-notes">
+                                <div class="p-4 rounded" style="background:var(--light);">
+                                    <div class="d-flex align-items-start">
+                                        <div class="pub-icon me-3" style="width:56px;height:56px;font-size:1.4rem;flex-shrink:0;">
+                                            <i class="fas fa-sticky-note text-primary"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-2">Notes to the Financial Statements</h4>
+                                            <p class="text-muted mb-3">Detailed explanatory notes providing additional context and breakdown of the financial figures. These notes include accounting policies, risk management practices, and detailed breakdowns of significant line items.</p>
+                                            <div class="row g-3">
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-book text-primary me-2"></i>
+                                                        <small><strong>Accounting Policies</strong><br><span class="text-muted">Basis of preparation &amp; key policies</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-tasks text-primary me-2"></i>
+                                                        <small><strong>Breakdowns</strong><br><span class="text-muted">Detailed line item explanations</span></small>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <i class="fas fa-exclamation-triangle text-primary me-2"></i>
+                                                        <small><strong>Risk &amp; Contingencies</strong><br><span class="text-muted">Risk disclosures &amp; contingent liabilities</span></small>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="alert alert-info d-inline-flex align-items-center" role="info" style="background: var(--light); border-left: 4px solid var(--primary);">
+                    <i class="fas fa-info-circle text-primary me-3 fa-lg"></i>
+                    <div class="text-start">
+                        <strong>Document Coming Soon</strong>
+                        <p class="mb-0 small text-muted">The complete audited financial statements document will be uploaded once approved and finalized. Members will be notified when it is available for download.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5" style="border:1px solid rgba(255,255,255,0.06);border-left:0;border-right:0;">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item"><a href="index.html">
+                            <h4 class="text-white mb-4" style="font-size:1.5rem;"><img src="img/logo.png" alt=""
+                                    style="width:30px;height:30px;margin-right:8px;">GHBS</h4>
+                        </a>
+                        <p style="color:rgba(255,255,255,0.5);">Great Harvest Bank SACCO (GHBS) was
+                            established in 2016 and got registered on the 26th of October 2021</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Quick Links</h4>
+                        <a href="about.html"><i class="fas fa-angle-right me-2"></i>About Us</a>
+                        <a href="gov.html"><i class="fas fa-angle-right me-2"></i>Governance</a>
+                        <a href="member.html"><i class="fas fa-angle-right me-2"></i>Membership</a>
+                        <a href="service.html"><i class="fas fa-angle-right me-2"></i>Products &amp; Services</a>
+                        <a href="publications.html"><i class="fas fa-angle-right me-2"></i>Publications</a>
+                        <a href="contact.html"><i class="fas fa-angle-right me-2"></i>Contact</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="footer-item">
+                        <h4 class="text-white mb-4">Contact Info</h4>
+                        <div class="d-flex align-items-center mb-3"><i
+                                class="fas fa-map-marker-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">Hotel Equatorial, Kampala(U)</p>
+                        </div>
+                        <div class="d-flex align-items-center mb-3"><i class="fas fa-envelope text-primary me-3"></i>
+                            <p class="text-white mb-0" style="font-size:0.85rem;">greatharvestbankerssacco2024@gmail.com
+                            </p>
+                        </div>
+                        <div class="d-flex align-items-center"><i class="fa fa-phone-alt text-primary me-3"></i>
+                            <p class="text-white mb-0">+256 770 483776</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-md-6 text-center text-md-start"><span class="text-body"><a href="#"
+                            class="border-bottom text-white"><i class="fas fa-copyright text-light me-2"></i>GHBS</a>,
+                        All right reserved.</span></div>
+                <div class="col-md-6 text-center text-md-end text-body">Designed By <a class="border-bottom text-white"
+                        href="">OscarLincoln</a></div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn btn-primary btn-lg-square rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
